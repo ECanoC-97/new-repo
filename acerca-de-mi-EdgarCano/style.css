@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf) format("truetype");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background-image: url(./images/fondo);
+  background-size: cover;
+}
+
+.header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(./images/encabezado.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* agrega el título de la página aquí */
+.titulo {
+  font-size: 120px;
+  font-style: italic;
+  text-shadow: 0 0 15px black;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* agrega aquí las reglas restantes */
+  font-size: 0;
+  width: 790px;
+  margin: 100px auto 50px;
+}
+
+/* agregar reglas CSS para tarjetas/cards y su contenido aquí */
+.card{
+  width: 350px;
+  background-color: rgba(221, 219, 219, 0.3);
+  margin-bottom: 60px;
+  margin-right: 90px;
+  padding: 45px 45px 70px 45px;
+  border-radius: 60px 10px 60px 10px;
+  box-shadow: 14px 14px 20px 0 rgba(239, 252, 60, 0.4);
+  display: inline-block;
+}
+
+.no-right-margin{
+  margin-right: 0;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-text{
+  font-size: 17px
+}
+
+.card-image{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  display: flex;
+  /* agrega aquí las reglas restantes */
+  height: 50px;
+  text-shadow: 0  0 15px white;
+  background-color: black;
+}
+
+/* agregar una regla CSS para la firma del pie de página */
+.firma{
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
